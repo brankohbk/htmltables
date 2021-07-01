@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas HTML</title>
+  <link rel="stylesheet" href="styles/main-finish.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex">
+  <header class="d-flex">
+    <img src="img/isologo.png" alt="Logo Pequeño" class="d-sm-none">
+    <img src="img/logo.png" alt="Logo" class="d-none d-sm-inline">
+    <h1>Tablas <small class="d-none d-md-inline d-portrait-none">| Introducción a Tablas HTML</small></h1>
+  </header>
+  <main class="d-flex">
+    <div id="container" class="d-flex">
+      <div class="table-container">
+     <table>
+       <colgroup>
+      <col class="nombres" span="1">
+      <col class="detalles" span="3">
+      <col class="precios" span="2">
+    </colgroup>
+       <thead>
+         <tr>
+           <th rowspan="2">Descripción</th>
+           <th rowspan="2">Precio</th>
+           <th rowspan="2">Cantidad</th>
+           <th rowspan="2">Descuento</th>
+           <th colspan="2">Total</th>
+         </tr>
+         <tr>
+           <th>Bruto</th>
+           <th>Neto</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>Producto 1</td>
+           <td>1001,01</td>
+           <td>01</td>
+           <td>10%</td>
+           <td>1001,01</td>
+           <td>900,91</td>
+         </tr>
+         <tr>
+           <td>Producto 2</td>
+           <td>2002,02</td>
+           <td>02</td>
+           <td>10%</td>
+           <td>4004,04</td>
+           <td>3603,64</td>
+         </tr>
+         <tr>
+           <td>Producto 3</td>
+           <td>3003,03</td>
+           <td>03</td>
+           <td>05%</td>
+           <td>9009,09</td>
+           <td>8558,64</td>
+         </tr>
+         <tr>
+           <td>Producto 4</td>
+           <td>4004,04</td>
+           <td>04</td>
+           <td>10%</td>
+           <td>16.016,16</td>
+           <td>14.414,54</td>
+         </tr>
+         <tr>
+           <td>Producto 5</td>
+           <td>5005,05</td>
+           <td>05</td>
+           <td>05%</td>
+           <td>25.025,25</td>
+           <td>23.773,99</td>
+         </tr>
+         <tr>
+           <td>Producto 6</td>
+           <td>6006,06</td>
+           <td>06</td>
+           <td>10%</td>
+           <td>36.036,36</td>
+           <td>32.432,72</td>
+         </tr>
+         <tr>
+           <td>Producto 7</td>
+           <td>7007,07</td>
+           <td>07</td>
+           <td>10%</td>
+           <td>49.049,49</td>
+           <td>44.144,54</td>
+         </tr>
+       </tbody>
+       <tfoot>
+         <tr>
+           <td colspan="4">Precio final</td>
+           <td>$ 140.141,40</td>
+           <td>$ 127.828,98</td>
+         </tr>
+       </tfoot>
+       <caption>
+         Pedido N°3214 para el clientre JOHN DOE, fecha 01-jul-2020
+       </caption>
+     </table>
+    </div>
+    </div>
+  </main>
+  <footer class="d-flex d-land-md-none">
+    <p>Branko Haberkon - &#x1F1E6;&#x1F1F7; - &copy; 2020 </p>
+  </footer>
+</body>
+
+</html>
